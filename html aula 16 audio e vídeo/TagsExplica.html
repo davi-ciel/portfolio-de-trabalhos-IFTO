@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Explicação das Tags de Mídia - HTML5</title>
+    <link rel="stylesheet" href="Formulario.css">
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: sans-serif;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        th, td {
+            border: 1px solid #444;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #ff3333;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+        code {
+            background-color: #222;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: #ff8888;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(20, 30, 55);">
+    <header>
+        <h1 style="color: white; text-align: center; font-family: sans-serif;">Entendendo as Tags Mídia</h1>
+    </header>
+    <br><br>
+
+    <h3 style="background-color: #ff3333; color: white; text-align: center; padding: 15px; font-family: sans-serif; width: 80%; margin: 0 auto; border-radius: 5px;">
+        As tags <code>&lt;audio&gt;</code> e <code>&lt;video&gt;</code> introduzidas no HTML5 revolucionaram a web. <br>
+        Elas permitem a reprodução de arquivos de mídia nativamente no navegador, eliminando de vez a necessidade de plugins antigos e inseguros, como o Adobe Flash.
+    </h3>
+
+    <br><br>
+
+    <div style="color: white; font-family: sans-serif; width: 80%; margin: 0 auto;">
+        <h2>Como Elas Funcionam?</h2>
+        <p>Ambas as tags funcionam como containers de mídia. Você pode definir o arquivo diretamente no atributo <code>src</code> ou usar a tag interna <code>&lt;source&gt;</code> para oferecer múltiplos formatos de arquivo (como .mp3, .ogg, .mp4). Dessa forma, se o navegador não suportar o primeiro formato, ele tenta carregar o próximo da lista automaticamente.</p>
+        
+        <br>
+        <h2>Tabela Global de Atributos</h2>
+        <p>Abaixo estão listados todos os atributos fundamentais, indicando quais servem para ambas as tags e quais são exclusivos para vídeo:</p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Atributo</th>
+                <th>Tipo de Mídia</th>
+                <th>Para que serve? / Função</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>src</code></td>
+                <td>Áudio e Vídeo</td>
+                <td>Define o caminho (URL ou diretório local) do arquivo de mídia que será reproduzido.</td>
+            </tr>
+            <tr>
+                <td><code>controls</code></td>
+                <td>Áudio e Vídeo</td>
+                <td>Exibe a interface padrão do navegador com os botões de reprodução (Play/Pause, barra de volume, progresso do tempo e tela cheia). Se não for colocado, a mídia só roda via comandos JavaScript.</td>
+            </tr>
+            <tr>
+                <td><code>autoplay</code></td>
+                <td>Áudio e Vídeo</td>
+                <td>Faz com que a mídia comece a tocar sozinha de forma automática assim que a página terminar de carregar.</td>
+            </tr>
+            <tr>
+                <td><code>loop</code></td>
+                <td>Áudio e Vídeo</td>
+                <td>Ativa a repetição contínua. Quando o áudio ou vídeo chega ao fim, ele reinicia do começo automaticamente em um ciclo infinito.</td>
+            </tr>
+            <tr>
+                <td><code>muted</code></td>
+                <td>Áudio e Vídeo</td>
+                <td>Inicia a mídia totalmente silenciada (muda). <i>Nota: A maioria dos navegadores atuais só permite o funcionamento do <code>autoplay</code> se o atributo <code>muted</code> estiver junto.</i></td>
+            </tr>
+            <tr>
+                <td><code>preload</code></td>
+                <td>Áudio e Vídeo</td>
+                <td>Informa ao navegador a estratégia de carregamento do arquivo ao abrir a página. Aceita três valores: <code>none</code> (não carrega nada antes do play), <code>metadata</code> (carrega só dados básicos como duração) e <code>auto</code> (baixa o arquivo inteiro em background).</td>
+            </tr>
+            <tr>
+                <td><code>poster</code></td>
+                <td>Apenas Vídeo</td>
+                <td>Define o endereço de uma imagem estática para ser exibida no player como uma "capa" ou "thumbnail" enquanto o vídeo não é reproduzido.</td>
+            </tr>
+            <tr>
+                <td><code>width</code></td>
+                <td>Apenas Vídeo</td>
+                <td>Especifica a largura do player de vídeo na tela (em pixels ou porcentagem).</td>
+            </tr>
+            <tr>
+                <td><code>height</code></td>
+                <td>Apenas Vídeo</td>
+                <td>Especifica a altura do player de vídeo na tela (em pixels ou porcentagem).</td>
+            </tr>
+            <tr>
+                <td><code>playsinline</code></td>
+                <td>Apenas Vídeo</td>
+                <td>Indica que o vídeo deve ser reproduzido diretamente no corpo da página em navegadores de dispositivos móveis (como iOS), evitando que o sistema operacional force a abertura automática em tela cheia no player nativo do celular.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+    <div style="text-align: center; margin-bottom: 40px;">
+        <a href="MediaSpider.html"><h3 style="color: #ff3333; font-family: sans-serif;">Clique aqui para voltar para a página de Mídia (NCS).</h3></a>
+    </div>
+</body>
+</html>
