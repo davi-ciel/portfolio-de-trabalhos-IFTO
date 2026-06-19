@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+     <meta charset="utf-8">
+    <title>Homem-Aranha - Desafio</title>
+    <link rel="stylesheet" href="Formulario.css">
+</head>
+<body style="background-color: rgb(20, 30, 55);">
+    <div class="h">
+        <h1>Mundo Aranha</h1>
+        <a href="index.html">Inicio</a> | <a href="FormTimes.html">Times</a> | <a href="FormCadastro.html">Cadastro</a>
+    </div>
+    <br>
+    <form action="">
+        <label for="Hero">Qual é o seu Homem-Aranha favorito?</label>
+        <input type="text" id="Hero" name="NomeAranha" placeholder="Ex: Peter Parker, Miles Morales..." class="input">
+        <br><br>
+
+        <label for="Color">Escolha uma cor para um novo traje: </label>
+        <input type="color" id="Color" name="color" value="#FF0000">
+        
+        <p>Qual destes vilões você acha o mais perigoso?</p>
+        <input type="checkbox" id="Duende" name="Duende" value="Duende">
+        <label for="Duende">Duende Verde</label><br>
+        
+        <input type="checkbox" id="DocOck" name="DocOck" value="DocOck">
+        <label for="DocOck">Doutor Octopus</label><br>
+        
+        <input type="checkbox" id="Venom" name="Venom" value="Venom">
+        <label for="Venom">Venom</label><br>
+        
+        <input type="checkbox" id="Rei" name="Rei" value="Rei">
+        <label for="Rei">Rei do Crime</label><br>
+        
+        <input type="checkbox" id="Misterio" name="Misterio" value="Misterio">
+        <label for="Misterio">Mistério</label><br>
+        <br>
+
+        <input type="submit" value="Enviar" class="input2" onclick="alert('Sentido Aranha ativado! Respostas enviadas. 🕷️✨')">
+        <input type="reset" value="Apagar" class="input2">
+    </form>
+    <br>
+    
+    <aside class="aside">
+        <br>
+        <h2><a href="FormCadastro.html">Faça já o seu Cadastro <br> e entre para a <br> central do Clarim Diário</a></h2>
+    </aside>
+    
+    <aside class="aside2">
+        <br>
+        <h2><a href="FormTimes.html">Venha ver as <br> previsões <br> do próximo filme!</a></h2>
+    </aside>
+</body>
+</html>
